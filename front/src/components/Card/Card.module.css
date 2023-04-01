@@ -1,0 +1,109 @@
+.container {    
+    background-color: rgba(30, 31, 28, 0.45); 
+    width: min-content;    
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(1, 0, 8, 0.808);
+    text-shadow: 4px 4px 12px rgba(0,0,0,0.6);
+}
+
+.buttonClose {       
+    margin-bottom: 1rem;          
+    margin-left: 15rem;
+    align-content: flex-end;
+    color: rgb(241, 232, 216);    
+    border-color: rgb(230, 228, 240);
+    background-color: rgb(239, 52, 52);
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.buttonClose:hover {
+    background-color: rgb(248, 8, 8);
+    transform: scale(1.5);
+}
+
+.imageCard {
+    margin-top: 1rem;
+    border-radius: 50%;
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: -5px 4px 66px 19px rgba(177, 210, 58, 0.75);
+    transition: transform 1s ease-in-out;
+    perspective: 10rem;
+    transform-style: flat;
+    transform-style: preserve-3d;
+}
+
+.imageCard:hover {
+    transform: rotateY(180deg);
+}
+
+.nameCard {         
+    margin: 5px;
+    align-items: center;      
+    justify-content: center;
+    width: 265px;      
+    font-family: cursive;
+    font-size: 2rem;    
+    color: rgb(6, 243, 192);
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.nameCard:hover {
+    color: rgb(154, 240, 16);
+    transform: scale(1.5);
+}
+
+.specieCard {
+    margin: 5px;
+    align-items: center;      
+    justify-content: center;
+    width: 265px; 
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(12, 238, 125);
+}
+
+.genderCard {
+    font-family: cursive;
+    font-style: oblique;
+    color: rgb(12, 238, 125);
+}
+
+.buttonRedHeart{        
+    margin-right: 15rem;
+    align-content: flex-end;
+    color: rgb(241, 232, 216);    
+    border-color: rgb(230, 228, 240);
+    background-color: rgba(37, 35, 35, 0);       
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms linear, transform 300ms ease-in-out;       
+}
+
+.buttonRedHeart:hover {
+    background-color: rgb(248, 8, 8);
+    transform: scale(1.5);    
+}
+
+.buttonWhiteHeart {
+    margin-right: 15rem;
+    align-content: flex-end;
+    color: rgb(241, 232, 216);    
+    border-color: rgb(230, 228, 240);
+    background-color: rgba(37, 35, 35, 0);       
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 300ms linear, transform 300ms ease-in-out; 
+}
+
+.buttonWhiteHeart:hover {
+    background-color: rgb(243, 238, 238);
+    transform: scale(1.5);
+}

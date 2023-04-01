@@ -1,0 +1,98 @@
+.navDiv {
+    background-color: rgba(86, 82, 82, 0.55);          
+    border-top-left-radius: 20px 50%;
+    border-top-right-radius: 20px 50%;
+    border-bottom-left-radius: 20px 50%;
+    border-bottom-right-radius: 20px 50%;
+    height: 5.5rem;    
+    display: flex;
+    margin-right: 2%;
+    margin-left: 2%;         
+}
+
+.btnAbout {            
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 8rem;
+    height: 1.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: cursive;
+    background-image: linear-gradient(to right, rgb(216, 216, 13), rgba(11, 142, 242, 0.793), orange, rgb(132, 255, 0));
+    background-size: 300% 100%;
+    box-shadow: 0.2rem 0.1rem 0.5rem 0.2rem rgb(219, 178, 160);
+    transition: background-position 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.btnAbout:hover {
+    background-position: 100% 0;
+
+}
+
+.btnHome {            
+    margin-top: 2rem;    
+    margin-left: 13.8rem;
+    margin-right: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    width: 8rem;
+    height: 1.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: cursive;       
+    background-image: linear-gradient(to right, rgb(216, 216, 13), rgba(11, 142, 242, 0.793), orange, rgb(132, 255, 0));
+    background-size: 300% 100%;
+    box-shadow: 0.2rem 0.1rem 0.5rem 0.2rem rgb(219, 178, 160);
+    transition: background-position 0.5s ease-in-out;  
+    cursor: pointer;
+}
+
+.btnHome:hover {
+    background-position: 100% 0;
+}
+ 
+.btnLogout {           
+    display: inline-table;      
+    margin-left: 18rem;    
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    width: max-content;
+    height: 4.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: cursive;
+    background-image: linear-gradient(to right, rgb(166, 219, 69), rgba(242, 19, 11, 0.793), orange, rgb(132, 255, 0));
+    background-size: 300% 100%;
+    box-shadow: 0.2rem 0.1rem 0.5rem 0.2rem rgb(219, 178, 160);
+    transition: background-position 0.5s ease-in-out;  
+    cursor: pointer;
+}
+
+.btnLogout:hover {
+    background-position: 100% 0;
+}
+
+.btnFavorites {        
+    margin-top: 2rem;    
+    border: none;
+    border-radius: 0.25rem;
+    width: 9rem;
+    height: 1.5rem;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: cursive;    
+    background-image: linear-gradient(to right, rgb(216, 216, 13), rgba(11, 142, 242, 0.793), orange, rgb(132, 255, 0));
+    background-size: 300% 100%;
+    box-shadow: 0.2rem 0.1rem 0.5rem 0.2rem rgb(219, 178, 160);
+    transition: background-position 0.5s ease-in-out;  
+    cursor: pointer;
+}
+
+.btnFavorites:hover {
+    background-position: 100% 0;
+}

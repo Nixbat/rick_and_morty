@@ -1,0 +1,19 @@
+.App {       
+   display: grid; 
+   text-align: center;       
+}
+
+video {
+   display: flexbox;
+   position: fixed;
+   width: 100%;   
+   left: 0%;
+   top: 0%;
+   height: 100%;
+   object-fit: cover;
+   transform: translate(-10% -10%);
+   z-index: -1;
+}
+
+
+

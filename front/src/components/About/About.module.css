@@ -1,0 +1,59 @@
+.principalContent {   
+    height: min-content;
+    display: inline-table;
+    width: 70%;          
+    margin-top: 2%;      
+    padding: 1%; 
+    background-color: rgba(12, 12, 12, 0.234);
+    border-radius: 10%;          
+}
+
+@keyframes intro {
+    0% {
+        transform: perspective(100vh) rotateX(15deg) translateY(20%);
+    }
+
+    100% {
+        transform: perspective(100vh) rotateX(15deg) translateY(-150%);
+    }
+}
+
+.aboutArticle {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    color: #ffb03aca;
+}
+
+.containerDiv {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    animation: intro 25s linear infinite;
+}
+
+.intro {    
+    background-color: rgba(39, 40, 41, 0.39);
+    border-top-left-radius: 20px 50%;
+    border-top-right-radius: 20px 50%;
+    border-bottom-left-radius: 20px 50%;
+    border-bottom-right-radius: 20px 50%;
+    width: 80%;
+    display: inline-table;
+    color: #ffb03a;
+}
+
+.aboutArticle h2,
+.aboutArticle h3 {
+    font-size: 5vw;
+    text-align: center;
+}
+
+.aboutArticle p {
+    font-size: 3vw;
+    line-height: 4rem;
+}

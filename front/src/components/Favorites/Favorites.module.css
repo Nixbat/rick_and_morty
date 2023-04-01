@@ -1,0 +1,26 @@
+.containerFavs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;    
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.selectUno {
+    border-color: rgb(225, 255, 0);   
+    width: 6rem;
+    font-family: cursive;
+    color: rgb(255, 251, 251);
+    background-color: rgba(127, 237, 9, 0.621);
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+}
+
+.selectDos {
+    border-color: rgb(225, 255, 0);   
+    width: 6rem;
+    font-family: cursive;
+    color: rgb(255, 251, 251);
+    background-color: rgba(58, 237, 9, 0.593);
+    border-radius: 0.25rem;
+}
