@@ -1,19 +1,19 @@
-import { useSelector, useDispatch } from "react-redux";
 import Card from "../Card/Card";
-import { filterCarsd, orderCards } from "../../redux/actions";
 import style from "./Favorites.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { cleanDetail, getFavorites } from "../../redux/actions";
 
 
 const Favorites = () => {
-    const favorites = useSelector((state) => state.myFavorites);
+    const favorites = useSelector((state) => state.myFavorites);    
     const dispatch = useDispatch();
 
     const handlerOrder = (event) => {
-        dispatch(orderCards(event.target.value))
+        dispatch (cleanDetail(event.target.value))
     };
 
     const handlerFilter = (event) => {
-        dispatch(filterCarsd(event.target.value))
+        dispatch(getFavorites(event.target.value))
     };
 
     return(        
@@ -45,10 +45,7 @@ const Favorites = () => {
                             image={image}
                         />
                     );
-                })}             
-
-
-
+                })}       
             </div>
         </div>
     );

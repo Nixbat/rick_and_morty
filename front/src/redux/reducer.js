@@ -1,8 +1,8 @@
-import { ADD_FAVORITE, FILTER, ORDER, REMOVE_FAVORITE } from "./actions";
+import { ADD_FAVORITE, REMOVE_FAVORITE, GET_CHARACTER_DETAIL, CLEAN_DETAIL, GET_FAVORITES } from "./actions";
 
 const initialState = {
     myFavorites: [],
-    allCharacters: [],    
+characterDetail: {},    
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -10,8 +10,8 @@ const rootReducer = (state = initialState, action) => {
         case ADD_FAVORITE:
             return { 
                 ...state,
-                 myFavorites: [...state.allCharacters, action.payload],
-                 allCharacters: [...state.allCharacters, action.payload]
+                 myFavorites: [...state.myFavorites, action.payload],  
+                 characterDetail: [...state.characterDetail, action.payload]               
                 };
 
         case REMOVE_FAVORITE:
@@ -22,25 +22,32 @@ const rootReducer = (state = initialState, action) => {
                 ),
              };
 
-        case FILTER:            
-            const allCharsFiltered = state.allCharacters.filter(char => char.gender === action.payload);
+        case GET_CHARACTER_DETAIL:                  
             return {
                 ...state,
-                myFavorites: allCharsFiltered
+                characterDetail: action.payload,
             };
 
-        case ORDER:
+        case CLEAN_DETAIL:
             return {
                 ...state,
-                myFavorites:
-                action.payload === "Ascendente"
-                ? state.allCharacters.sort((a, b) => a.id - b.id)
-                : state.allCharacters.sort((a, b) => b.id - a.id)
-            };
+                characterDetail: {},
+                // action.payload === "Ascendente"
+                // ? state.characterDetail.sort((a, b) => a.id - b.id)
+                // : state.characterDetail.sort((a, b) => b.id - a.id)
+            };        
+
+        case GET_FAVORITES:
+            // const allCharsFiltered = state.characterDetail.filter(char =>
+            //     char.gender === action.payload);
+                return {
+                    ...state,
+                    myFavorites: action.payload
+                };
 
         default:
             return { ...state };
     }
 };
 
-export default rootReducer
+export default rootReducer;

@@ -1,12 +1,23 @@
 import Card from '../Card/Card';
 import style from "./Cards.module.css";
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
+import { getFavorites } from "../../redux/actions";
 
 function Cards({ characters, onClose }) {   
-   return (
+   const dispatch = useDispatch();
+
+   useEffect(() => {
+      dispatch(getFavorites());
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+   }, []);
+
+   return (      
       <div className={style.divContain}>
          {
             characters.map(({id, name, species, gender, image}) => {
-               return <Card                
+               return (
+                <Card                
                key={id}
                id={id}
                name={name}
@@ -15,11 +26,13 @@ function Cards({ characters, onClose }) {
                image={image}               
                onClose={() => onClose(id)}                                      
                />
+               );
             })
          }
       </div>
    )
 }
+
 
 export default Cards;
 

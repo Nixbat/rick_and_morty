@@ -18,8 +18,8 @@ class About extends React.Component {
                         <h2>Created By</h2>
                         <h3>Nixon Batallas</h3>
                         <h2>Student at Henry</h2>
-                        <h3>Cohorte FT-36A</h3>
-                        <h3>Instructor: Jorge Vega</h3>
+                        <h3>Cohorte FT-37A</h3>
+                        <h3>Instructor: Daiana Grillia</h3>
                         <p>                            
                            I am currently in the process of training in the Full Stack Developer career.
                            I thank Henry for this study opportunity that they give us since I have managed

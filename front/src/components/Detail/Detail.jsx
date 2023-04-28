@@ -1,21 +1,8 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
-import axios from "axios";
+import usecharacter from "../hooks/useCharacter";
 import style from "./Detail.module.css";
 
-
 const Detail = () => {
-    const {detailId} = useParams();
-    const [character, setCharacter] = useState({});
-
-    useEffect(() => {
-        const URL_BASE = "http://localhost:3001/rickandmorty";                  
-        
-        axios(`${URL_BASE}/detail/${detailId}`)
-        .then((response) => setCharacter(response.data));        
-
-    // eslint-disable-next-line
-    }, []);
+    const character = usecharacter();   
 
     return(
         <div>

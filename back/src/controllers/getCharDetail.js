@@ -7,11 +7,11 @@ const getCharDetail = (req, res) => {
     axios
     .get(`${URL}/character/${id}?key=${KEY}`)
     .then((response) => {
-        const { id, name, species, image, gender, origin } = response.data;
-        res.status(200).json({ id, name, species, image, gender, origin });
+        const { id, name, species, image, gender, origin, status } = response.data;
+        res.status(200).json({ id, name, species, image, gender, origin, status });
     })
     .catch((error) => {
-        res.status(500).json({ error: error.massage });
+        res.status(500).json({ error: error.message });
     });
 };
 

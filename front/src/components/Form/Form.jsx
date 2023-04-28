@@ -1,33 +1,3 @@
-// import { useState } from "react";
-// import validation from "./validation";
-// import style from "./Form.module.css";
-
-
-// const Form = ({ login }) => {
-//     const [userData, setUserData] = useState({
-//         username: "",
-//         password: "",
-//     });
-
-//     const [errors, setErrors] = useState({
-//         username: "",
-//         password: "",
-//     });
-
-//     const handleInputChange = (event) => {
-//         const property = event.target.name;
-//         const value = event.target.value;
-
-//         setUserData({...userData, [property]: value});
-//         validation({ ...userData, [property]: value}, errors, setErrors);
-//     };
-
-//     const handleSubmit = (event) => {
-//         event.preventDefault();
-//         login(userData)
-//     };
-
-
 import { useState } from "react";
 import validation from "./validation";
 import style from './Form.module.css';

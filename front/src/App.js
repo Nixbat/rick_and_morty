@@ -24,7 +24,7 @@ function App () {
   }, [access]);
 
   //-----------------CREDENCIALES LOGIN----------------------------------
-  const username = "nixmix@gmail.com";
+  const username = "proyecto@gmail.com";
   const password = "123nbs";
 
   //----------------EVENT HANDLERS--------------------------------------  
